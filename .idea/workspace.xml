@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e723373c-2dee-4ad6-a152-343526a0f967" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="22aq4sDRCE8TVOZMNYhshC3tBAu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e723373c-2dee-4ad6-a152-343526a0f967" name="默认的" comment="" />
+      <created>1640085857249</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640085857249</updated>
+      <workItem from="1640085858296" duration="4131000" />
+      <workItem from="1640186718775" duration="1247000" />
+      <workItem from="1640258764405" duration="9526000" />
+      <workItem from="1640346531377" duration="3315000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="789" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1640350420104">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="789" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/3840.0.1080.1880@0.0.1920.1040" timestamp="1640350420104" />
+    <state x="1130" y="177" width="522" height="594" key="find.popup" timestamp="1640348632426">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1130" y="177" width="522" height="594" key="find.popup/0.0.1920.1040/3840.0.1080.1880@0.0.1920.1040" timestamp="1640348632426" />
+  </component>
+</project>

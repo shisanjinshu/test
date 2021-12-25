@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html style="width:100%;height:100%;overflow-y:hidden">
+	<head>
+		<meta charset="UTF-8">
+		<title>圣诞节</title>
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<style>
+			#counter {
+				position:absolute;
+			    color: white;
+			    width: 100%;
+			    height: 20%;
+			    text-align: center;
+			    margin-top: 30%;
+			}
+			#continer {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			}
+			
+			.box {
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background-color: white;
+			}
+			
+			.box1 {
+				/*margin-top: 10px;*/
+				background: url(image/InvitationA.png) no-repeat;
+				background-size: 100% 100%;
+				opacity: 0.7;
+				/*width: 100%;*/
+			}
+			
+			/*.box2 {*/
+			/*	background: url(image/InvitationB.png) no-repeat;*/
+			/*	background-size: 100% ;*/
+			/*	!*width: 100%;*!*/
+			/*}*/
+			
+			#canvas-frame{
+				-webkit-tap-highlight-color:rgba(0,0,0,0);
+			}
+		</style>
+	</head>
+	<body style="width:100%;height:100%;margin:0;overflow-y:hidden" onload="threeStart();">
+		<audio src="music/bak.mp3" id="Jaudio" class="media-audio" autoplay preload loop="loop"></audio>
+		<div id="continer">
+			<div class="box box1">
+				<div style="position: absolute; top: 100%;width: 100%;">
+<!--					<div style="width: 100%; text-align:center;">-->
+<!--						<p style="font-size: 32px;font-family: cursive;">请柬</p>-->
+<!--						<p>艾希&nbsp;&nbsp;&&nbsp;&nbsp;泰达米尔</p>-->
+<!--						<p>诚挚邀请您参加我们的婚庆典礼</p>-->
+					</div>
+				</div>
+			</div>
+<!--			<div class="box box2">-->
+<!--				<div style="position: absolute; width: 100%;">-->
+<!--					<div style="width: 100%; text-align:center;">-->
+<!--&lt;!&ndash;						<p>婚礼时间：</p>&ndash;&gt;-->
+<!--&lt;!&ndash;						<p>2019年9月28号</p>&ndash;&gt;-->
+<!--&lt;!&ndash;						<p>婚礼地点：</p>&ndash;&gt;-->
+<!--&lt;!&ndash;						<p>平昌县&nbsp;酒香宾馆&nbsp;三楼</p>&ndash;&gt;-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+		</div>
+		<div id="canvas-frame" style="width:100%;height:100%"></div>
+	</body>
+</html>
+<script type="text/javascript" src="js/three.min.js"></script>
+<script type="text/javascript" src="js/GLTFLoader.js"></script>
+<script type="text/javascript" src="js/MTLLoader.min.js"></script>
+<script type="text/javascript" src="js/TrackballControls.js"></script>
+<!-- <script type="text/javascript" src="js/Stats.js"></script> -->
+<script type="text/javascript" src="js/tween.js"></script>
+<script type="text/javascript" src="js/heyi-util.js"></script>
+<script type="text/javascript" src="js/fly.js"></script>
+<script type="text/javascript" src="js/hert.js"></script>
+<script type="text/javascript" src="js/heyiui.js"></script>
+<script type="text/javascript" src="js/hert.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+	var initCreatedPhotoStatus =false ;
+	//给请柬设置点击关闭事件,并且触发3Dui
+	document.getElementById("continer").onclick = function() {
+		if (initCreatedPhotoStatus == false && imgsLoaded) {
+			document.getElementById("continer").style.display = "none";
+			createPhotoGroup();
+			initCreatedPhotoStatus = true;
+			setTimeout(function() {
+				if (initStartAnimationIsInit == false) {
+					currentGuide = "mf";
+					showHand(0.45, -0.45, 0, -0.03, -Math.PI / 0.9);
+				}
+			}, 3000);
+		} else if (imgsLoaded) {
+			document.getElementById("continer").style.display = "none";
+		}
+	};
+
+	function audioAutoPlay(id){
+		var audio = document.getElementById(id);
+		audio.play();
+	    document.addEventListener("WeixinJSBridgeReady", function () {
+	            audio.play();
+	    }, false);
+	    document.addEventListener('YixinJSBridgeReady', function() {
+	    	audio.play();
+	    }, false);
+	}
+	audioAutoPlay('Jaudio');
+</script>
